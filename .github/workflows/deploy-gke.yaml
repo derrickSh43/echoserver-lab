@@ -27,7 +27,7 @@ jobs:
         
         uses: google-github-actions/auth@v2
         with:
-          workload_identity_provider: projects/${{ env.PROJECT_NUMBER }}/locations/global/workloadIdentityPools/gke-lab-pool-v2/providers/gke-lab-provider-v2
+          workload_identity_provider: projects/603509934273/locations/global/workloadIdentityPools/gke-lab-pool-v2/providers/gke-lab-provider-fixed
           service_account: gke-lab-sa@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
 
       - name: Set up gcloud CLI
